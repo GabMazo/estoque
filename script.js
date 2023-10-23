@@ -22,3 +22,20 @@ saveProductButton.addEventListener('click', () => {
     productQuantityInput.value = '';
     productForm.style.display = 'none';
 });
+
+const imageUrls = [
+    'Estoque/img/areia.jfif',
+    'Estoque/img/cimento.jfif',
+    'Estoque/img/tijolo.jfif',
+
+];
+
+const imageColumn = document.getElementById('imageColumn');
+
+
+imageUrls.forEach((imageUrl) => {
+    const imgElement = document.createElement('img');
+    imgElement.src = imageUrl;
+    imgElement.alt = 'Imagem';
+    imageColumn.appendChild(imgElement);
+});
