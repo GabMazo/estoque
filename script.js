@@ -25,3 +25,6 @@ saveProductButton.addEventListener('click', () => {
     productPriceInput.value = '';
     productForm.style.display = 'none';
 });
+
+
+
