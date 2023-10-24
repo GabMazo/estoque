@@ -22,13 +22,3 @@ button {
     padding: 10px;
     margin: 20px;
 }
-
-.image-column {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.image-column img {
-    margin: 10px;
-}

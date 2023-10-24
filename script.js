@@ -13,11 +13,11 @@ saveProductButton.addEventListener('click', () => {
     const productName = productNameInput.value;
     const productQuantity = productQuantityInput.value;
 
+
     const productItem = document.createElement('div');
     productItem.textContent = `Produto: ${productName}, Quantidade: ${productQuantity}`;
     productList.appendChild(productItem);
 
-   
     productNameInput.value = '';
     productQuantityInput.value = '';
     productForm.style.display = 'none';
