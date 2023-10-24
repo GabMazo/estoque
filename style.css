@@ -2,12 +2,25 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 header {
     background-color: #333;
     color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 10px;
 }
+
+
+h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+
+p {
+    font-size: 16px;
+}
+
 
 #product-list {
     margin: 20px;
