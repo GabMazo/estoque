@@ -17,7 +17,7 @@ saveProductButton.addEventListener('click', () => {
 
 
     const productItem = document.createElement('div');
-    productItem.textContent = `Produto: ${productName}, Quantidade: ${productQuantity}, Preço: ${productPrice}`;
+    productItem.textContent = `Produto: ${productName}, Quantidade: ${productQuantity}, Preço(R$): ${productPrice}`;
     productList.appendChild(productItem);
 
     productNameInput.value = '';
