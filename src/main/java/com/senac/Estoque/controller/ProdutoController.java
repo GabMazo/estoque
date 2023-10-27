@@ -25,13 +25,14 @@ public class ProdutoController {
         return produtoService.buscarPorId(id);
     }
 
-    @PostMapping("/")
+    @RequestMapping(path = "/produto", method = RequestMethod.POST)
     public Produto adicionarProduto(@RequestBody Produto produto) {
         return produtoService.adicionarProduto(produto);
     }
 
-    @PutMapping("/{id}")
-    public Produto atualizarProduto(@PathVariable Long id, @RequestBody Produto produto) {
+
+    @PutMapping("/produto/{id}")
+    public Produto atualizarProduto(@PathVariable("id") Long id, @RequestBody Produto produto) {
         if (produtoService.buscarPorId(id) != null) {
             produto.setId(id);
             return produtoService.atualizarProduto(produto);
@@ -41,7 +42,7 @@ public class ProdutoController {
         }
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/produto/{id}")
     public void deletarProduto(@PathVariable ("id") Long id) {
          produtoService.deletarProduto(id);
 
