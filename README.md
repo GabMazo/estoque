@@ -1,3 +1,3 @@
 # estoque
 
-Descrever aqui do que se trata o projeto.
+Projetinho de estoque feito pelo Felipe e Gabriel :)
